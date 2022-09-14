@@ -1,0 +1,15 @@
+.main
+{
+
+    width: fit-content;
+    background-color: rgb(221, 170, 109);
+    margin: auto;
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-top: 10vh;
+}
+
+h1
+{
+    text-align: center;
+}

@@ -1,0 +1,405 @@
+/* rouge : #eb4034*/
+/* bleu:  #3064A4*/
+/* gris: rgba(228,220,220,255) */
+
+
+
+
+.flex_logo
+{
+    display:flex;
+    justify-content: space-between;
+}
+
+.logo
+{
+   width: 207px;
+   height: 150px;
+}
+
+
+
+.contact
+{
+    background-color:rgba(40,96,165,1);
+    color:rgb(255, 255, 255);
+    padding:15px 20px ;
+    padding-top: 0px;
+    border-radius: 20px;
+    margin: 50px 25px;
+    cursor: pointer;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    margin-top: 50px;
+    /* transform: translateX(-30px); */
+
+    
+}
+
+.contact::before
+{
+  content:"";
+  display: inline-block;
+  background: url(../images/connexion.png);
+  position: relative;
+  top:14px;
+  left:-10px;
+  height: 40px;
+  width: 40px;
+  background-size:100%;
+
+}
+
+@media screen and (max-width:820px) { 
+  .contact::before{
+    display: none;
+  }
+
+  .contact{
+    padding-top: 15px;
+  }
+
+}
+
+.contact:hover
+{
+    background-color:rgba(40,96,165,0.8);
+    transition: all 0.3s ease 0s;
+     
+}
+
+nav
+{
+    width:cover;
+    height:60px;
+    background-color: rgba(228,220,220,255);
+    font-size: 1.2em;
+    
+}
+
+body
+{
+    margin:0;
+    margin-bottom: 30px;
+}
+
+.references_links 
+{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+}
+
+.references_links li
+
+{
+    display: inline-block;
+    list-style-type: none;
+    
+}
+
+.references_links li a
+{
+
+    color:#3064A4;
+    text-decoration: none;
+ 
+}
+
+.references_links li a::after
+{
+    content:"";
+    display:block;
+    position:relative;
+    width:100%;
+    height:3px;
+    background:#eb4034;
+    transform: scale(0);
+    transition:transform 0.2s ease-in-out;
+}
+
+.references_links li a:hover::after
+{
+    transform:scale(1);
+}
+
+h1
+{
+    text-align:center;
+    color:#eb4034;
+
+
+}
+
+p
+{
+    max-width:700px;
+    margin:auto;
+    color:#3064A4;
+    text-align:justify;
+    font-size:1.3em;
+
+}
+
+.img_BG
+{
+    height:400px;
+}
+
+.link_checked::after
+{
+    content:"";
+    display:block;
+    position:relative;
+    width:100%;
+    height:3px;
+    background:#eb4034;
+}
+.img_BG_main
+{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.alban:hover
+{
+    transform:scale(1.5,1.5);
+    transition:all 1s ease 0s;
+}
+
+.alexis:hover
+{
+    transform:scale(1.5,1.5);
+    transition:all 1s ease 0s;
+}
+
+.ryan:hover
+{
+    transform:scale(1.5,1.5);
+    transition:all 1s ease 0s;
+}
+.ivan:hover
+{
+    transform:scale(1.5,1.5);
+    transition:all 1s ease 0s;
+}
+.dan:hover
+{
+    transform:scale(1.5,1.5);
+    transition:all 1s ease 0s;
+}
+
+.fond_opacité
+{
+    background:rgba(189, 189, 189, 0.7)
+}
+
+
+.flex_change_mode
+{
+    display:flex;
+    justify-content: center;
+}
+
+.change_mode
+{
+    background-color: #af3128;
+    color:white;
+    padding:20px 35px;
+    border-radius:25px;
+    font-style: oblique;
+    transition: all 0.3s ease-in-out 0s;
+    cursor:pointer;
+    margin-bottom:50px;
+}
+
+.change_mode:hover
+{
+    background-color: rgba(44, 40, 40,0.8);
+    transform:scale(1.2,1.2);
+
+}
+
+.dark
+{
+    background-color: rgb(54, 50, 50);
+    color:white;
+    transition:all 0.3s ease 0s;
+
+}
+
+.low_invisible
+{
+    opacity:0.3;
+}
+
+.animation_click
+ {
+     width:50px;
+     height:50px;
+     border-radius: 50%;
+     background:linear-gradient(to top, #3064A4,#eb4034);
+     position: absolute;
+     z-index: 8000;
+     transform: scale(0);
+     transform-origin: center;
+     animation: animation_click 1s ease-in-out;
+ }
+
+@keyframes animation_click {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform:scale(2);
+        opacity: 1;
+
+    }
+    0%{
+        transform: scale(0);
+        opacity:0;
+    }
+
+}
+
+
+
+
+ul {
+    list-style:none;
+  }
+  
+
+  
+  .main-content {
+    padding:1rem;
+  }
+  /* Navbar */
+  .navbar {  
+
+    background:var(red);
+    color:var(red);
+  }
+  .references__links { 
+    display:flex;  
+  }
+  .navbar__link { 
+    padding:0 10px;
+  }
+  .navbar__link > a { 
+    color:var(red);
+    text-decoration:none;
+  }
+  .burger {
+    display:none;
+  }
+  
+
+@media screen and (max-width:767.98px) {
+.references_links { 
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  width:0;
+  height:calc(80vh - 250px);  
+  position:absolute;
+  top:185px;
+  right:0;     
+  background:white;     
+  transform: translateX(110%);
+  transition: all .5s ease-in-out;
+}
+.show-nav .references_links { 
+  
+  width:100vw;    
+  transform: translateX(0);
+} 
+.navbar__link {    
+  transform: translateX(101%);
+  transition: all .5s ease-in-out;
+}
+
+.show-nav .navbar__link  {        
+  transform: translateX(0);    
+}   
+.navbar__link > a {
+  display:block;
+  padding:1rem;
+  font-size:1.6rem;
+  color:#3064A4;  
+  transition: all .4s ease-in-out;
+}
+.navbar__link > a:hover {
+  padding-left:2rem;
+  letter-spacing:5px;
+}
+
+.burger {
+  display:block;
+  position:relative;
+  padding:0;
+  width:45px;
+  height:45px;
+  border:none;
+  background:transparent;
+  cursor:pointer;
+  left:10px;
+}
+.bar {
+  display:block;    
+  width:45px;
+  height:4px;  
+  border-radius:3px;
+  background:#3064A4; 
+  transition: all .5s ease-in-out;   
+}
+.bar::before, .bar::after {
+  content:"";
+  width:45px;
+  height:4px;
+  position:absolute; 
+  left:0;  
+  background:#3064A4; 
+  border-radius:3px;    
+  transition: all .5s ease-in-out;
+}
+.bar::before {
+  transform:translateY(-12px)
+}
+.bar::after {
+  transform:translateY(12px)
+}
+.show-nav .bar {
+  width:0;
+  background:transparent;    
+}
+.show-nav .bar::before {
+  transform:rotate(45deg);
+}
+.show-nav .bar::after {
+  transform:rotate(-45deg);
+}
+
+/* Bonus - Animations */
+.show-nav .first {      
+  transition: all 1.1s ease-out;
+} 
+.show-nav .second {      
+  transition: all 1.2s ease-out;
+} 
+.show-nav .third {      
+  transition: all 1.3s ease-out;
+} 
+.show-nav .four {      
+  transition: all 1.4s ease-out;
+} 
+
+}
+
+p
+{
+    max-width: 80%;
+}

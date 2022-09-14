@@ -1,0 +1,63 @@
+.main {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 30px;
+    background-color: white;
+    border-radius: 25px;
+    border: outset #3064A4 5px;
+    box-shadow:#3064A4 10px 10px 10px ;
+}
+.bouton
+{
+    background-color:#eb4034;
+    color: white;
+    padding: 15px 60px;
+    font-size: 1.3em;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.bouton:hover
+{
+    transform: scale(1.3,1.3);
+    transition: all 0.5s ease 0s;
+}
+
+body
+{
+    background-color: #ccc;
+}
+
+h1
+{
+    text-align: center;
+    color: red;
+}
+
+.ye
+{
+    font-style: italic;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.ye:hover
+{
+    text-decoration: underline ;
+}
+
+.grey_band
+{
+    width:cover;
+    height:12px;
+    background-color:rgba(228,220,220,255) ;
+    margin-bottom:10px;
+    transform: translateY(-10px);
+
+}
